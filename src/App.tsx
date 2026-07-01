@@ -135,7 +135,7 @@ export default function App() {
             >
               <span className="w-2 h-2 rounded-full bg-neon-blue animate-ping" />
               <span className="text-xs sm:text-sm font-semibold bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent">
-                국내 최초! 사회복지 현장을 위한 실습형 AI 축제
+                사회복지 현장을 위한 실습형 AI 축제
               </span>
             </motion.div>
 
@@ -362,8 +362,7 @@ export default function App() {
               단 2시간! 밀도 높은 입문반 교육 구성
             </h2>
             <p className="text-slate-400 mt-4 text-sm sm:text-base">
-              오전 10시부터 12시까지 지루할 틈 없이 전개되는 온라인 실습 프로그램표입니다. 
-              각 주차별 최고의 사례 공유와 실습 시간이 정밀하게 안배되었습니다.
+              오전 10시부터 12시까지 지루할 틈 없이 전개되는 온라인 실습 프로그램표입니다.
             </p>
           </div>
 
@@ -420,21 +419,18 @@ export default function App() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
               참가를 통해 획득하는 실무 고도화 패키지
             </h2>
-            <p className="text-slate-400 mt-4 text-sm sm:text-base">
-              참가비 이상의 가치를 지닌, 일상의 단순 복지 행정 스트레스를 덜 수 있도록 엄선된 핵심 수록 지침들을 참가자 전원에게 공식 전달해 드립니다.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             
             <div className="glass-panel p-6 rounded-2xl border border-white/5 flex gap-4">
               <div className="p-3 bg-indigo-500/10 rounded-xl text-neon-purple h-max shrink-0">
-                <FileText className="w-6 h-6" />
+                <HelpCircle className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="text-base font-bold text-white mb-1.5">사회복지 웹앱 50선 제공</h4>
+                <h4 className="text-base font-bold text-white mb-1.5">네이버 스터디 카페 Q&A 지원</h4>
                 <p className="text-xs text-slate-400 leading-relaxed font-normal">
-                  사례회의록 가공, 상담일지 정제, 사업 계획 검토서 등 현직에서 바로 실무에 접목 및 활용 가능한 실제적인 고도화 웹앱 50선 증정!
+                  네이버 스터디 카페를 통해 교육 이후에도 지속적인 질의응답(Q&A)과 수강생 사후 피드백을 밀착 지원하여 실무 적응을 확실하게 이끌어 드립니다.
                 </p>
               </div>
             </div>
@@ -444,9 +440,9 @@ export default function App() {
                 <Laptop className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="text-base font-bold text-white mb-1.5">바이브코더 웹앱 제공</h4>
+                <h4 className="text-base font-bold text-white mb-1.5">바이브코딩 프롬프트 제공</h4>
                 <p className="text-xs text-slate-400 leading-relaxed font-normal">
-                  사회복지 현장 맞춤형 생성 AI 연동을 정교하게 도와 실무 비서 가동을 원활하게 이끄는 유용한 프롬프트 템플릿 실무 도구 제공!
+                  사회복지 현장 맞춤형 생성 AI 연동을 정교하게 도와주는 유용한 바이브코딩 프롬프트 템플릿 실무 도구 제공!
                 </p>
               </div>
             </div>
@@ -468,9 +464,9 @@ export default function App() {
                 <Users className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="text-base font-bold text-white mb-1.5">참가자 한정 사회복지 챗GPT 스터디 톡방 초대</h4>
+                <h4 className="text-base font-bold text-white mb-1.5">참가자 전용 단톡방 초대</h4>
                 <p className="text-xs text-slate-400 leading-relaxed font-normal">
-                  일회성 수강에 머물지 않고 교육 이후에도 챗GPT 실무 훈련과 실제 혁신 노하우를 자유롭게 나누고 질문하며 함께 공부할 참가자 전용 단톡방 초대권 제공.
+                  일회성 수강에 머물지 않고 교육 이후에도 생성형AI 활용 실무 노하우와 최신 AI정보를 제공받는 참가자 전용 단톡방 초대.
                 </p>
               </div>
             </div>
@@ -552,14 +548,7 @@ export default function App() {
       <section className="py-20 radial-glow" id="pricing">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-black text-white mb-2">
-              입문반 교육 정규 마감 특별 혜택가
-            </h2>
-            <p className="text-slate-400 text-xs sm:text-sm">
-              선착순 사전 우대 혜택 적용 티켓 정보입니다. 단체 신청 정산 및 견적서 발행 가능합니다.
-            </p>
-          </div>
+
 
           <div className="bg-slate-900/90 rounded-2xl border-2 border-dashed border-indigo-500/30 overflow-hidden shadow-2xl relative">
             
