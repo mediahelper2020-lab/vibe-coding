@@ -259,15 +259,40 @@ export default function App() {
               transition={{ delay: 0.5 }}
               className="flex flex-col items-center justify-center gap-3 max-w-2xl mx-auto mt-4"
             >
-              <a 
+              <motion.a 
                 href={GOOGLE_FORM_URL}
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="w-full flex flex-col sm:flex-row items-center justify-center gap-3 bg-gradient-to-r from-cyan-400 via-indigo-500 to-purple-600 text-slate-950 font-black text-xl sm:text-2xl py-5 px-10 rounded-2xl cursor-pointer transition-all text-center hover:scale-[1.04] shadow-[0_0_40px_rgba(34,211,238,0.6)] border-2 border-cyan-300 animate-pulse hover:animate-none"
+                animate={{
+                  scale: [1, 1.02, 1],
+                  boxShadow: [
+                    "0 0 20px rgba(34, 211, 238, 0.4), 0 0 5px rgba(168, 85, 247, 0.2)",
+                    "0 0 35px rgba(34, 211, 238, 0.8), 0 0 20px rgba(168, 85, 247, 0.5)",
+                    "0 0 20px rgba(34, 211, 238, 0.4), 0 0 5px rgba(168, 85, 247, 0.2)"
+                  ]
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                whileHover={{ 
+                  scale: 1.04,
+                  boxShadow: "0 0 50px rgba(239, 68, 68, 0.9), 0 0 30px rgba(245, 158, 11, 0.8)",
+                  borderColor: "#f87171"
+                }}
+                whileTap={{ scale: 0.98 }}
+                className="w-full flex flex-col sm:flex-row items-center justify-center gap-3 bg-gradient-to-r from-cyan-400 via-indigo-500 to-purple-600 text-slate-950 hover:text-white font-black text-xl sm:text-2xl py-6 px-10 rounded-2xl cursor-pointer text-center border-2 border-cyan-300 relative overflow-hidden group select-none transition-colors duration-300"
               >
-                <span className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">🚀 지금 바로 [7/24 강의] 구글폼 신청하기 (선착순)</span>
-                <ArrowRight className="w-7 h-7 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] shrink-0" />
-              </a>
+                {/* Red gradient overlay */}
+                <span className="absolute inset-0 bg-gradient-to-r from-red-500 via-rose-600 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out pointer-events-none" />
+                {/* Glossy shine overlay sweep effect */}
+                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out pointer-events-none" />
+                <span className="relative z-10 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] flex items-center gap-2 justify-center pointer-events-none">
+                  🚀 지금 바로 [7/24 강의] 구글폼 신청하기 (선착순)
+                </span>
+                <ArrowRight className="relative z-10 w-7 h-7 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] shrink-0 group-hover:translate-x-1.5 transition-transform pointer-events-none" />
+              </motion.a>
               <p className="text-xs sm:text-sm text-cyan-300 font-bold tracking-tight mt-1 animate-pulse">
                 👇 위 버튼을 클릭하여 복지인사이트 공식 신청 구글폼을 작성해주세요.
               </p>
@@ -603,14 +628,39 @@ export default function App() {
                 </p>
                 <span className="text-[10px] text-slate-500 block mt-1">(부가세 영수증 발급 가능)</span>
                 
-                <a 
+                <motion.a 
                   href={GOOGLE_FORM_URL}
                   target="_blank"
                   referrerPolicy="no-referrer"
-                  className="w-full bg-gradient-to-r from-cyan-400 via-indigo-600 to-neon-purple text-slate-950 hover:text-white font-black text-sm sm:text-base py-4 px-6 rounded-2xl shadow-[0_0_25px_rgba(34,211,238,0.4)] transition-all hover:scale-[1.04] text-center block mt-6 cursor-pointer border border-cyan-300 animate-pulse hover:animate-none"
+                  animate={{
+                    scale: [1, 1.02, 1],
+                    boxShadow: [
+                      "0 0 15px rgba(34, 211, 238, 0.3), 0 0 5px rgba(168, 85, 247, 0.1)",
+                      "0 0 30px rgba(34, 211, 238, 0.7), 0 0 15px rgba(168, 85, 247, 0.4)",
+                      "0 0 15px rgba(34, 211, 238, 0.3), 0 0 5px rgba(168, 85, 247, 0.1)"
+                    ]
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  whileHover={{ 
+                    scale: 1.04,
+                    boxShadow: "0 0 40px rgba(239, 68, 68, 0.8), 0 0 20px rgba(245, 158, 11, 0.7)",
+                    borderColor: "#f87171"
+                  }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full bg-gradient-to-r from-cyan-400 via-indigo-600 to-neon-purple text-slate-950 hover:text-white font-black text-sm sm:text-base py-4 px-6 rounded-2xl transition-all text-center block mt-6 cursor-pointer border border-cyan-300 relative overflow-hidden group select-none"
                 >
-                  🔥 구글폼 간편 수강신청 바로가기
-                </a>
+                  {/* Red gradient overlay */}
+                  <span className="absolute inset-0 bg-gradient-to-r from-red-500 via-rose-600 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out pointer-events-none" />
+                  {/* Glossy shine overlay sweep effect */}
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out pointer-events-none" />
+                  <span className="relative z-10 flex items-center justify-center gap-1.5 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
+                    🔥 구글폼 간편 수강신청 바로가기
+                  </span>
+                </motion.a>
               </div>
 
             </div>
