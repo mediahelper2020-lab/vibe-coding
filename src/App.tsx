@@ -522,9 +522,6 @@ export default function App() {
                 <h3 className="text-2xl sm:text-3xl font-black text-white">
                   바이브코딩으로 사회복지 실무를 가장 빠르게 혁신하는 방법을 제시합니다
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed mt-2">
-                  이창희 강사는 전국 복지기관 1,500회 출강 기록을 보유하고 사회복지사들의 번아웃 예방과 행정 혁신을 실천으로 대변해 드리는 검증된 리더입니다.
-                </p>
               </div>
 
               {SPEAKER_PROFILE.careers.map((careerSection, cIdx) => (
