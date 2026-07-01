@@ -1,0 +1,6 @@
+{
+  "name": "사회복지 바이브코딩 페스타",
+  "description": "2026 사회복지 바이브코딩 온라인 입문반 강의 공식 안내 및 신청 페이지",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
