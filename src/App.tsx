@@ -454,7 +454,7 @@ export default function App() {
               <div>
                 <h4 className="text-base font-bold text-white mb-1.5">사회복지 웹앱 50선 제공</h4>
                 <p className="text-xs text-slate-400 leading-relaxed font-normal">
-                  가계도 생성기, AI 스튜디오, 성과분석 대시보드 등 복지 현장에서 즉시 활용할 수 있고 커스터마이징 가능한 혁신적 사회복지 웹앱 50선 전격 수록 및 제공!
+                  사례회의 역할 생성기, 프롬프트 윤리체크 웹앱, 성과분석 대시보드 등 복지 현장에서 즉시 활용할 수 있고 커스터마이징 가능한 혁신적 사회복지 웹앱 50선 전격 수록 및 제공!
                 </p>
               </div>
             </div>
